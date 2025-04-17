@@ -1,0 +1,68 @@
+@use '/src/styles/mixins';
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include mixins.desktop-small {
+    padding: 0 50px;
+  }
+
+  @include mixins.tablet {
+    padding: 0 40px;
+  }
+
+  @include mixins.tablet-small {
+    padding: 0 25px;
+  }
+}
+
+// $desktop: 1440px;
+// $tablet: 1024px;
+// $tablet-small: 768px;
+// $mobile-large: 480px;
+// $mobile: 390px;
+
+// @mixin desktop {
+//   @media (max-width: variables.$desktop) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop-small {
+//   @media (max-width: (variables.$desktop - 1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin tablet {
+//   @media (max-width: (variables.$tablet - 0.1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin tablet-small {
+//   @media (max-width: (variables.$tablet-small - 0.1px)) {
+//     @content;
+//   }
+// }
+
+// @mixin mobile-large {
+//   @media (max-width: variables.$mobile-large) {
+//     @content;
+//   }
+// }
+
+// @mixin mobile {
+//   @media (max-width: variables.$mobile) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop-only {
+//   @media (min-width: variables.$tablet) {
+//     @content;
+//   }
+// }

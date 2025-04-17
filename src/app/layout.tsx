@@ -1,3 +1,5 @@
+import '../styles/global.scss';
+import { Header } from '@/widgest/header';
 
 export default function RootLayout({
   children,
@@ -7,6 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header/>
         {children}
       </body>
     </html>
